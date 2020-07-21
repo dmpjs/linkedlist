@@ -1,0 +1,45 @@
+# https://help.github.com/en/categories/automating-your-workflow-with-github-actions
+
+name: "Markdown Lint"
+
+on:
+  push:
+    paths:
+      - "**.md"
+  pull_request:
+    paths:
+      - "**.md"
+
+jobs:
+  text-lint:
+    name: "Markdown Lint"
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - name: "Setup node"
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14.2.0"
+
+      - name: "Install pnpm"
+        run: |
+          npm install pnpm@next -g
+          pnpm --version
+
+      - name: "Cache dependencies"
+        uses: actions/cache@v1
+        with:
+          key: npm-${{ hashFiles('pnpm-lock.yaml') }}
+          path: ~/.npm
+          restore-keys: |
+            npm-
+
+      - name: "Install dependencies"
+        run: pnpm install --ignore-scripts --prefer-offline
+
+      - run: pnpm run lint
