@@ -1,10 +1,10 @@
-<h1 align="center">Deno module template</h1>
+<h1 align="center">Linklist</h1>
 <p align="center">
-    <a href="https://github.com/dmpjs/deno-module-template/releases">
-        <img src="https://img.shields.io/github/release/dmpjs/deno-module-template.svg?color=bright_green&label=latest&style=flat-square">
+    <a href="https://github.com/dmpjs/linkedlist/releases">
+        <img src="https://img.shields.io/github/release/dmpjs/linkedlist.svg?color=bright_green&label=latest&style=flat-square">
     </a>
-    <a href="https://github.com/dmpjs/deno-module-template/actions">
-        <img src="https://img.shields.io/github/workflow/status/dmpjs/deno-module-template/Continuous%20Integration/master?label=ci&style=flat-square">
+    <a href="https://github.com/dmpjs/linkedlist/actions">
+        <img src="https://img.shields.io/github/workflow/status/dmpjs/linkedlist/Continuous%20Integration/master?label=ci&style=flat-square">
     </a>
     <a href="https://github.com/semantic-release/semantic-release">
         <img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square">
@@ -14,7 +14,13 @@
     </a>
 </p>
 
-Provides a GitHub repository template for a deno module, using GitHub actions.
+A doubly linked list (Bi-directional) implementation
+
+### What is a linked list?
+
+A linked list is a common data structure made of a chain of nodes in which each node contains a value and a pointer to the next node in the chain.
+
+The head pointer points to the first node, and the last element of the list points to null. When the list is empty, the head pointer points to null.
 
 ## Installation
 
@@ -23,9 +29,9 @@ Provides a GitHub repository template for a deno module, using GitHub actions.
 Run
 
 ```
-import { greeting } from "https://raw.githubusercontent.com/dmpjs/deno-module-template/v/mod.ts"; // import from github as raw data
+import { greeting } from "https://raw.githubusercontent.com/dmpjs/linkedlist/v/mod.ts"; // import from github as raw data
 
-import { greeting } from "https://deno.land/x/deno-module-template@/mod.ts"; // If module is uploaded into deno.land
+import { greeting } from "https://deno.land/x/linkedlist@/mod.ts"; // If module is uploaded into deno.land
 ```
 
 ## Usage

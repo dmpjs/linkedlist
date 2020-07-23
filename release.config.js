@@ -16,8 +16,7 @@ module.exports = {
               "version.ts",
             ],
             "from": 'const VERSION = ".*"',
-            "to":
-              'const VERSION = "${nextRelease.version}"',
+            "to": 'const VERSION = "${nextRelease.version}"',
             "results": [
               {
                 "file": "version.ts",
@@ -32,9 +31,8 @@ module.exports = {
             "files": [
               "README.md",
             ],
-            "from": '/v.*/',
-            "to":
-              '/v${nextRelease.version}/',
+            "from": "/v.*/",
+            "to": "/v${nextRelease.version}/",
             "results": [
               {
                 "file": "README.md",
@@ -49,9 +47,8 @@ module.exports = {
             "files": [
               "README.md",
             ],
-            "from": '@.*/',
-            "to":
-              '@${nextRelease.version}/',
+            "from": "@.*/",
+            "to": "@${nextRelease.version}/",
             "results": [
               {
                 "file": "README.md",

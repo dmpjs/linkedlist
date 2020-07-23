@@ -1,7 +1,2 @@
-export function greeting(str?: string): string {
-  if (str) {
-    return `Hello ${str}`;
-  } else {
-    throw new Error("Please provide an input");
-  }
-}
+export { LinkedList } from './src/linked_list.ts'
+export { LinkedListItem } from './src/linked_list_item.ts'
