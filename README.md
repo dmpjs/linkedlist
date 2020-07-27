@@ -14,6 +14,8 @@
     </a>
 </p>
 
+A Deno port of [x3-linkedlist](https://github.com/x3cion/x3-linkedlist)
+
 A doubly linked list (Bi-directional) implementation
 
 ### What is a linked list
