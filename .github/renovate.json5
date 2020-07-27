@@ -4,8 +4,8 @@
   "labels": ["dependency", "Changed"],
   "semanticCommits": true,
   "major": {
-    "semanticCommitType": "deps",
-    "semanticCommitScope": ""
+    "semanticCommitType": "chore",
+    "semanticCommitScope": "deps"
   },
   "packageRules": [
     {
@@ -22,7 +22,8 @@
       "depTypeList": ["dependencies"],
       "updateTypes": ["patch", "minor"],
       "labels": ["type/deps"],
-      "semanticCommitType": "deps"
+      "semanticCommitType": "chore",
+      "semanticCommitScope": "deps"
     },
     {
       "groupName": "devDependencies (major)",
