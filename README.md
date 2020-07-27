@@ -31,7 +31,7 @@ Run
 ```
 import { LinkedList, LinkedListItem } from "https://raw.githubusercontent.com/dmpjs/linkedlist/v1.0.0/ import from github as raw data
 
-import { LinkedList, LinkedListItem } from "https://deno.land/x/linkedlist@1.0.0/ If module is uploaded into deno.land
+import { LinkedList, LinkedListItem } from "https://deno.land/x/linkedlist@v1.0.0/ If module is uploaded into deno.land
 ```
 
 ## Usage
