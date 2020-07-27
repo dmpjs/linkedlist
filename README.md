@@ -24,8 +24,6 @@ The head pointer points to the head node, and the tail element of the list point
 
 ## Installation
 
-:bulb: this is a great place for showing how to import the module, see below:
-
 Run
 
 ```
