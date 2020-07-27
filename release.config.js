@@ -47,8 +47,8 @@ module.exports = {
             "files": [
               "README.md",
             ],
-            "from": "@.*/",
-            "to": "@${nextRelease.version}/",
+            "from": "@v.*/",
+            "to": "@v${nextRelease.version}/",
             "results": [
               {
                 "file": "README.md",
