@@ -20,7 +20,7 @@ A doubly linked list (Bi-directional) implementation
 
 A linked list is a common data structure made of a chain of nodes in which each node contains a value and a pointer to the next node in the chain.
 
-The head pointer points to the first node, and the last element of the list points to null. When the list is empty, the head pointer points to null.
+The head pointer points to the head node, and the tail element of the list points to null. When the list is empty, the head pointer points to null.
 
 ## Installation
 
@@ -29,9 +29,9 @@ The head pointer points to the first node, and the last element of the list poin
 Run
 
 ```
-import { greeting } from "https://raw.githubusercontent.com/dmpjs/linkedlist/v/mod.ts"; // import from github as raw data
+import { LinkedList, LinkedListItem } from "https://raw.githubusercontent.com/dmpjs/linkedlist/v/mod.ts"; // import from github as raw data
 
-import { greeting } from "https://deno.land/x/linkedlist@/mod.ts"; // If module is uploaded into deno.land
+import { LinkedList, LinkedListItem } from "https://deno.land/x/linkedlist@/mod.ts"; // If module is uploaded into deno.land
 ```
 
 ## Usage
@@ -43,7 +43,11 @@ import { greeting } from "https://deno.land/x/linkedlist@/mod.ts"; // If module 
 Run
 
 ```
-deno test ./test.ts
+import { LinkedList } from "https://raw.githubusercontent.com/dmpjs/linkedlist/v/mod.ts"; // import from github as raw data
+
+const list = new LinkedList([1, 2, 3, 4]);
+
+console.log("content:", list.join(" -> "));
 ```
 
 ## Versioning

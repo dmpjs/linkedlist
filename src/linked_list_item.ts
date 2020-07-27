@@ -1,8 +1,9 @@
 /**
  * Represents an Item within LinkedList.
+ *
  * An item holds a value and the links to other LinkedListItem's
  * LinkedListItem's can only be attached behind.
- * Theirfor, to add one before, before has to add one behind.
+ * There for, to add one before, before has to add one behind.
  */
 export class LinkedListItem<T> {
   /**
@@ -21,7 +22,7 @@ export class LinkedListItem<T> {
 
   /**
    * @param value Value to be held
-   * @param unlinkCleanup Function to run on unlink() call. Usually used by LinkedList to fix first and last pointers and reduce length.
+   * @param unlinkCleanup Function to run on unlink() call. Usually used by LinkedList to fix head and tail pointers and reduce length.
    */
   constructor(
     public value: T,
@@ -60,9 +61,11 @@ export class LinkedListItem<T> {
     if (this.behind) {
       this.behind.before = this.before;
     }
+
     if (this.unlinkCleanup) {
       this.unlinkCleanup(this);
     }
+
     this.unlinkCleanup = undefined;
 
     if (unchain) {
@@ -80,6 +83,7 @@ export class LinkedListItem<T> {
    */
   protected insertBefore(before: LinkedListItem<T>): void {
     this.before = before;
+
     if (!this.unlinkCleanup) {
       this.unlinkCleanup = before.unlinkCleanup;
     }

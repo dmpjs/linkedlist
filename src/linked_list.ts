@@ -7,12 +7,12 @@ export class LinkedList<T> {
   /**
    * First item in list
    */
-  public first: LinkedListItem<T> | undefined;
+  public head: LinkedListItem<T> | undefined;
 
   /**
    * Last item in list
    */
-  public last: LinkedListItem<T> | undefined;
+  public tail: LinkedListItem<T> | undefined;
 
   /**
    * Current length of this LinkedList.
@@ -35,7 +35,7 @@ export class LinkedList<T> {
 
   /**
    * Clears this LinkedList.
-   * The default complexity is O(1), because it only removes links to the first and last item and resets the length.
+   * The default complexity is O(1), because it only removes links to the head and tail item and resets the length.
    * Note that if any LinkedListItem is still referenced outside the LinkedList, their before and behind fields might
    * still reference the chain, not freeing space.
    * You can set the unchain parameter to true, so every item in the linked list will be unchained,
@@ -46,12 +46,12 @@ export class LinkedList<T> {
    */
   public clear(unchain = false): void {
     if (unchain) {
-      while (this.first) {
-        this.first.unlink(true);
+      while (this.head) {
+        this.head.unlink(true);
       }
     }
 
-    this.first = this.last = undefined;
+    this.head = this.tail = undefined;
     this.length = 0;
   }
 
@@ -75,13 +75,14 @@ export class LinkedList<T> {
         return false;
       }
     }
+
     return true;
   }
 
   /**
    * Filters values into a new LinkedList
    *
-   * @param callback decides wether given element should be part of new LinkedList
+   * @param callback decides whether given element should be part of new LinkedList
    *
    * @see Array#filter
    */
@@ -94,11 +95,13 @@ export class LinkedList<T> {
     }
 
     const newList: LinkedList<T> = new LinkedList();
+
     for (const [item, value] of this) {
       if (callback(value, item, this)) {
         newList.push(value);
       }
     }
+
     return newList;
   }
 
@@ -161,6 +164,7 @@ export class LinkedList<T> {
     if (thisArg) {
       callback = callback.bind(thisArg);
     }
+
     for (const [item, value] of this) {
       callback(value, item, this);
     }
@@ -178,17 +182,20 @@ export class LinkedList<T> {
    */
   public includes(value: T, fromIndex = 0): boolean {
     let current = this.getItemByIndex(fromIndex);
+
     while (current) {
       if (current.value === value) {
         return true;
       }
+
       current = current.behind;
     }
+
     return false;
   }
 
   /**
-   * Searches forward for given value and returns the first corresponding LinkedListItem found
+   * Searches forward for given value and returns the head corresponding LinkedListItem found
    *
    * @param searchedValue Value to be found
    * @param fromIndex Index to start from
@@ -200,17 +207,20 @@ export class LinkedList<T> {
     fromIndex = 0,
   ): LinkedListItem<T> | undefined {
     let current = this.getItemByIndex(fromIndex);
+
     while (current) {
       if (current.value === searchedValue) {
         return current;
       }
+
       current = current.behind;
     }
+
     return;
   }
 
   /**
-   * Searches backwards for given value and returns the first corresponding LinkedListItem found
+   * Searches backwards for given value and returns the head corresponding LinkedListItem found
    *
    * @param searchedValue Value to be found
    * @param fromIndex Index to start from
@@ -222,12 +232,14 @@ export class LinkedList<T> {
     fromIndex = -1,
   ): LinkedListItem<T> | undefined {
     let current = this.getItemByIndex(fromIndex);
+
     while (current) {
       if (current.value === searchedValue) {
         return current;
       }
       current = current.before;
     }
+
     return;
   }
 
@@ -247,9 +259,11 @@ export class LinkedList<T> {
       callback = callback.bind(thisArg);
     }
     const newList = new LinkedList<V>();
+
     for (const [item, value] of this) {
       newList.push(callback(value, item, this));
     }
+
     return newList;
   }
 
@@ -288,21 +302,24 @@ export class LinkedList<T> {
     ) => V,
     initialValue?: V | T,
   ): V | T {
-    let current = this.first;
+    let current = this.head;
     if (!current) {
       if (!initialValue) {
         throw new TypeError(
           "Empty accumulator on empty LinkedList is not allowed.",
         );
       }
+
       return initialValue;
     }
 
     if (initialValue === undefined) {
       initialValue = current.value;
+
       if (!current.behind) {
         return initialValue;
       }
+
       current = current.behind;
     }
 
@@ -310,15 +327,16 @@ export class LinkedList<T> {
       initialValue = callback(initialValue, current.value, current, this);
       current = current.behind;
     } while (current);
+
     return initialValue;
   }
 
   /**
-   * From Array#reduce on MDN: The reduceRight() method applies a function against an accumulator and each value of the LinkedList (from last-to-first)
+   * From Array#reduce on MDN: The reduceRight() method applies a function against an accumulator and each value of the LinkedList (from tail-to-head)
    * to reduce it to a single value.
    *
    * @param callback Gets accumulator, value, LinkedListeItem and LinkedList. The response will be used as the next accumulator
-   * @param initialValue Initial accumulator being passed to first call
+   * @param initialValue Initial accumulator being passed to head call
    */
   public reduceRight<V>(
     callback: (
@@ -346,18 +364,21 @@ export class LinkedList<T> {
     ) => V,
     initialValue?: V | T,
   ): V | T {
-    let current = this.last;
+    let current = this.tail;
+
     if (!current) {
       if (!initialValue) {
         throw new TypeError(
           "Empty accumulator on empty LinkedList is not allowed.",
         );
       }
+
       return initialValue;
     }
     // let accumulator: V | T;
     if (initialValue === undefined) {
       initialValue = current.value;
+
       if (!current.before) {
         return initialValue;
       }
@@ -368,6 +389,7 @@ export class LinkedList<T> {
       initialValue = callback(initialValue, current.value, current, this);
       current = current.before;
     } while (current);
+
     return initialValue;
   }
 
@@ -386,11 +408,13 @@ export class LinkedList<T> {
     if (thisArg) {
       callback = callback.bind(thisArg);
     }
+
     for (const [item, value] of this) {
       if (callback(value, item, this)) {
         return true;
       }
     }
+
     return false;
   }
 
@@ -415,6 +439,7 @@ export class LinkedList<T> {
    */
   public concat<V>(...others: Array<V | LinkedList<V>>): LinkedList<V | T> {
     const newList = new LinkedList<V | T>(this as LinkedList<V | T>);
+
     for (const other of others) {
       if (other instanceof LinkedList) {
         newList.push(...other.values());
@@ -422,18 +447,22 @@ export class LinkedList<T> {
         newList.push(other);
       }
     }
+
     return newList;
   }
 
   /**
-   * Removes the last LinkedListItem and returns its inner value
+   * Removes the tail LinkedListItem and returns its inner value
    */
   public pop(): T | undefined {
-    if (!this.last) {
+    if (!this.tail) {
       return;
     }
-    const item = this.last;
+
+    const item = this.tail;
+
     item.unlink();
+
     return item.value;
   }
 
@@ -445,14 +474,17 @@ export class LinkedList<T> {
   public push(...values: T[]): number {
     for (const value of values) {
       const item = new LinkedListItem(value, this.unlinkCleanup);
-      if (!this.first || !this.last) {
-        this.first = this.last = item;
+
+      if (!this.head || !this.tail) {
+        this.head = this.tail = item;
       } else {
-        this.last.insertBehind(item);
-        this.last = item;
+        this.tail.insertBehind(item);
+        this.tail = item;
       }
+
       this.length++;
     }
+
     return this.length;
   }
 
@@ -464,19 +496,22 @@ export class LinkedList<T> {
   public unshift(...values: T[]): number {
     for (const value of values) {
       const item = new LinkedListItem(value, this.unlinkCleanup);
-      if (!this.last || !this.first) {
-        this.first = this.last = item;
+
+      if (!this.tail || !this.head) {
+        this.head = this.tail = item;
       } else {
-        item.insertBehind(this.first);
-        this.first = item;
+        item.insertBehind(this.head);
+        this.head = item;
       }
+
       this.length++;
     }
+
     return this.length;
   }
 
   /**
-   * Removes first occurrence of value found.
+   * Removes head occurrence of value found.
    *
    * @param value value to remove from LinkedList
    */
@@ -510,14 +545,17 @@ export class LinkedList<T> {
   }
 
   /**
-   * Returns and removes first element from LinkedList
+   * Returns and removes head element from LinkedList
    */
   public shift(): T | undefined {
-    if (!this.first) {
+    if (!this.head) {
       return;
     }
-    const item = this.first;
+
+    const item = this.head;
+
     item.unlink();
+
     return item.value;
   }
 
@@ -525,10 +563,12 @@ export class LinkedList<T> {
    * Returns LinkedListItem and value for every entry of this LinkedList
    */
   public *[Symbol.iterator](): IterableIterator<[LinkedListItem<T>, T]> {
-    let current = this.first;
+    let current = this.head;
+
     if (!current) {
       return;
     }
+
     do {
       yield [current, current.value];
       current = current.behind;
@@ -548,10 +588,12 @@ export class LinkedList<T> {
    * Iterates the LinkedListItem's of this LinkedList
    */
   public *keys(): IterableIterator<LinkedListItem<T>> {
-    let current = this.first;
+    let current = this.head;
+
     if (!current) {
       return;
     }
+
     do {
       yield current;
       current = current.behind;
@@ -562,7 +604,8 @@ export class LinkedList<T> {
    * Returns a value for every entry of this LinkedList
    */
   public *values(): IterableIterator<T> {
-    let current = this.first;
+    let current = this.head;
+
     if (!current) {
       return;
     }
@@ -580,25 +623,26 @@ export class LinkedList<T> {
    * @param index Index of item to get from list
    */
   private getItemByIndex(index: number): LinkedListItem<T> | undefined {
-    if (index === undefined) {
-      throw new Error("index must be a number!");
-    }
-    if (!this.first) {
+    if (!this.head) {
       return;
     }
+
     let current: LinkedListItem<T> | undefined;
+
     if (index > 0) {
-      current = this.first;
+      current = this.head;
+
       while (current && index--) {
         current = current.behind;
       }
     } else if (index < 0) {
-      current = this.last;
+      current = this.tail;
+
       while (current && ++index) {
         current = current.before;
       }
     } else {
-      return this.first;
+      return this.head;
     }
 
     return current;
@@ -606,19 +650,21 @@ export class LinkedList<T> {
 
   /**
    * Given to own LinkedListItem's for following jobs regarding an unlink:
-   * - If item is first item, set the next item as first item
-   * - If item is last item, set the previous item as last item
+   * - If item is head item, set the next item as head item
+   * - If item is tail item, set the previous item as tail item
    * - Decrease length
    *
    * @param item Item that has been unlinked
    */
   private unlinkCleanup = (item: LinkedListItem<T>): void => {
-    if (this.first === item) {
-      this.first = this.first.behind;
+    if (this.head === item) {
+      this.head = this.head.behind;
     }
-    if (this.last === item) {
-      this.last = this.last.before;
+
+    if (this.tail === item) {
+      this.tail = this.tail.before;
     }
+
     this.length--;
   };
 }
