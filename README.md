@@ -16,7 +16,7 @@
 
 A doubly linked list (Bi-directional) implementation
 
-### What is a linked list?
+### What is a linked list
 
 A linked list is a common data structure made of a chain of nodes in which each node contains a value and a pointer to the next node in the chain.
 
@@ -51,7 +51,7 @@ Run
 ```bash
 $ deno test test.ts
 ```
-to run all tests.
+To run all tests.
 
 ## Versioning
 
