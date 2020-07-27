@@ -36,12 +36,6 @@ import { LinkedList, LinkedListItem } from "https://deno.land/x/linkedlist@/mod.
 
 ## Usage
 
-:bulb: this is a great place for showing, usage examples
-
-## Test
-
-Run
-
 ```
 import { LinkedList } from "https://raw.githubusercontent.com/dmpjs/linkedlist/v/mod.ts"; // import from github as raw data
 
@@ -49,6 +43,15 @@ const list = new LinkedList([1, 2, 3, 4]);
 
 console.log("content:", list.join(" -> "));
 ```
+
+## Test
+
+Run
+
+```bash
+$ deno test test.ts
+```
+to run all tests.
 
 ## Versioning
 
