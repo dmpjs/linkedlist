@@ -7,9 +7,14 @@ updates:
       include: "scope"
       prefix: "github-actions"
     directory: "/"
-    labels:
-      - "dependency"
+    default_labels:
+      - "Dependency update"
+      - "Changed"
+    commit_message:
+      prefix: "feat"
+      prefix_development: "chore"
+      include_scope: true
     open-pull-requests-limit: 10
     package-ecosystem: "github-actions"
     schedule:
-      interval: "daily"
+      interval: "live"
