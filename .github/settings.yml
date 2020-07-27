@@ -53,7 +53,7 @@ labels:
     description: "Changelog Security"
     color: ed3e3b
 
-  - name: "Status: Good first issue"
+  - name: "Status: Good head issue"
     color: d7e102
 
   - name: "Status: Help wanted"
