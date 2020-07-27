@@ -21,8 +21,8 @@ module.exports = {
               {
                 "file": "version.ts",
                 "hasChanged": true,
-                "numMatches": 72,
-                "numReplacements": 72,
+                "numMatches": 1,
+                "numReplacements": 1,
               },
             ],
             "countMatches": true,
@@ -53,8 +53,8 @@ module.exports = {
               {
                 "file": "README.md",
                 "hasChanged": true,
-                "numMatches": 1,
-                "numReplacements": 1,
+                "numMatches": 72,
+                "numReplacements": 72,
               },
             ],
             "countMatches": true,
