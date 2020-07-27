@@ -1,3 +1,10 @@
+### [1.1.1](https://github.com/dmpjs/linkedlist/compare/v1.1.0...v1.1.1) (2020-07-27)
+
+
+### Bug Fixes
+
+* fixed settings.yml settings ([a64e5fd](https://github.com/dmpjs/linkedlist/commit/a64e5fdd55ec516bbe914426c178490428d05918))
+
 ## [1.1.0](https://github.com/dmpjs/linkedlist/compare/v1.0.0...v1.1.0) (2020-07-27)
 
 
