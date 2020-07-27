@@ -27,15 +27,15 @@ The head pointer points to the head node, and the tail element of the list point
 Run
 
 ```
-import { LinkedList, LinkedListItem } from "https://raw.githubusercontent.com/dmpjs/linkedlist/v/mod.ts"; // import from github as raw data
+import { LinkedList, LinkedListItem } from "https://raw.githubusercontent.com/dmpjs/linkedlist/v1.0.0-alpha.3/ import from github as raw data
 
-import { LinkedList, LinkedListItem } from "https://deno.land/x/linkedlist@/mod.ts"; // If module is uploaded into deno.land
+import { LinkedList, LinkedListItem } from "https://deno.land/x/linkedlist@1.0.0-alpha.3/ If module is uploaded into deno.land
 ```
 
 ## Usage
 
 ```
-import { LinkedList } from "https://raw.githubusercontent.com/dmpjs/linkedlist/v/mod.ts"; // import from github as raw data
+import { LinkedList } from "https://raw.githubusercontent.com/dmpjs/linkedlist/v1.0.0-alpha.3/ import from github as raw data
 
 const list = new LinkedList([1, 2, 3, 4]);
 

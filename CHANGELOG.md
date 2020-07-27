@@ -1,3 +1,11 @@
+## [1.0.0-alpha.3](https://github.com/dmpjs/linkedlist/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2020-07-27)
+
+
+### Bug Fixes
+
+* fixed matches on release.config.js ([aa4741a](https://github.com/dmpjs/linkedlist/commit/aa4741a2aa2796096dfb83beee1b1d668e213653))
+* fixed matches on release.config.js ([7909e15](https://github.com/dmpjs/linkedlist/commit/7909e154d3f7994df699f8edca42968aeb4a9307))
+
 ## [1.0.0-alpha.2](https://github.com/dmpjs/linkedlist/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2020-07-27)
 
 
