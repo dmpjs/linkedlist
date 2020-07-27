@@ -37,8 +37,8 @@ module.exports = {
               {
                 "file": "README.md",
                 "hasChanged": true,
-                "numMatches": 1,
-                "numReplacements": 1,
+                "numMatches": 2,
+                "numReplacements": 2,
               },
             ],
             "countMatches": true,
