@@ -21,8 +21,8 @@ module.exports = {
               {
                 "file": "version.ts",
                 "hasChanged": true,
-                "numMatches": 1,
-                "numReplacements": 1,
+                "numMatches": 72,
+                "numReplacements": 72,
               },
             ],
             "countMatches": true,
