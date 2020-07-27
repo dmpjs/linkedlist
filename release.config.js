@@ -32,7 +32,7 @@ module.exports = {
               "README.md",
             ],
             "from": "/v.*/",
-            "to": "/v${nextRelease.version}/",
+            "to": "/v${nextRelease.version}/mod.ts",
             "results": [
               {
                 "file": "README.md",
@@ -48,7 +48,7 @@ module.exports = {
               "README.md",
             ],
             "from": "@v.*/",
-            "to": "@v${nextRelease.version}/",
+            "to": "@v${nextRelease.version}/mod.ts",
             "results": [
               {
                 "file": "README.md",
