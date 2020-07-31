@@ -10,7 +10,7 @@ dependencies:
   husky: 4.2.5
   textlint: 11.7.6
   textlint-rule-abbr-within-parentheses: 1.0.2
-  textlint-rule-alex: 2.0.0
+  textlint-rule-alex: 2.1.0
   textlint-rule-apostrophe: 2.0.0
   textlint-rule-common-misspellings: 1.0.1
   textlint-rule-diacritics: 1.0.0
@@ -4673,13 +4673,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-jUndArOnqI1+azKBf54gLFxllrk=
-  /textlint-rule-alex/2.0.0:
+  /textlint-rule-alex/2.1.0:
     dependencies:
       alex: 8.1.1
       textlint-rule-helper: 2.1.1
     dev: false
     resolution:
-      integrity: sha512-qyQsrKkSsBTk4PvQlRDDWW+A4mogoctjVAJjIDyQBVcyTqjJtkYfUNCrCXSLawnVTCgf+9ST+LuH44PoCxx2qA==
+      integrity: sha512-+ctxNHWJNfO7IXMj+D4XOBHL1Gj7/vnroCjw8wByPxpCngfr/fmMYyaJ5H5v9dIQjY+WuPmpAp3xM4zkZqjHJQ==
   /textlint-rule-apostrophe/2.0.0:
     dev: false
     engines:
@@ -5524,7 +5524,7 @@ specifiers:
   minimist: 1.2.5
   textlint: 11.7.6
   textlint-rule-abbr-within-parentheses: 1.0.2
-  textlint-rule-alex: 2.0.0
+  textlint-rule-alex: 2.1.0
   textlint-rule-apostrophe: 2.0.0
   textlint-rule-common-misspellings: 1.0.1
   textlint-rule-diacritics: 1.0.0
