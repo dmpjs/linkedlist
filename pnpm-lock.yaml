@@ -5,7 +5,7 @@ dependencies:
   '@textlint-rule/textlint-rule-no-invalid-control-character': 1.2.0
   '@textlint-rule/textlint-rule-no-unmatched-pair': 1.0.7
   '@textlint-rule/textlint-rule-preset-google': 0.1.2
-  conventional-changelog-conventionalcommits: 4.3.1
+  conventional-changelog-conventionalcommits: 4.4.0
   cz-conventional-changelog: 3.2.0
   husky: 4.2.5
   textlint: 11.7.6
@@ -1281,7 +1281,7 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-oYHydvZKU+bS8LnGqTMlNrrd7769EsuEHKy4fh1oMdvvDi7fem8U+nvfresJ1IDB8K00Mn4LpiA/lR+7Gs6rgg==
-  /conventional-changelog-conventionalcommits/4.3.1:
+  /conventional-changelog-conventionalcommits/4.4.0:
     dependencies:
       compare-func: 2.0.0
       lodash: 4.17.19
@@ -1290,7 +1290,7 @@ packages:
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-EQa7TJzF7H4EMkfjjJV7d+gragejDqa8NirZnCfRpruCMZqRbAJ8DqmYbkHrYtBYicXqgfM0zkk6HlvLPcyOdQ==
+      integrity: sha512-ybvx76jTh08tpaYrYn/yd0uJNLt5yMrb1BphDe4WBredMlvPisvMghfpnJb6RmRNcqXeuhR6LfGZGewbkRm9yA==
   /conventional-commit-types/3.0.0:
     dev: false
     resolution:
@@ -5558,7 +5558,7 @@ specifiers:
   '@textlint-rule/textlint-rule-no-invalid-control-character': 1.2.0
   '@textlint-rule/textlint-rule-no-unmatched-pair': 1.0.7
   '@textlint-rule/textlint-rule-preset-google': 0.1.2
-  conventional-changelog-conventionalcommits: 4.3.1
+  conventional-changelog-conventionalcommits: 4.4.0
   cz-conventional-changelog: 3.2.0
   husky: 4.2.5
   minimist: 1.2.5
