@@ -7,7 +7,7 @@ dependencies:
   '@textlint-rule/textlint-rule-preset-google': 0.1.2
   conventional-changelog-conventionalcommits: 4.4.0
   cz-conventional-changelog: 3.3.0
-  husky: 4.2.5
+  husky: 4.3.0
   textlint: 11.7.6
   textlint-rule-abbr-within-parentheses: 1.0.2
   textlint-rule-alex: 3.0.0
@@ -1337,6 +1337,18 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-xb3ZL6+L8b9JLLCx3ZdoZy4+2ECphCMo2PwqgP1tlfVq6M6YReyzBJtvWWtbDSpNr9hn96pkCiZqUcFEc+54Qg==
+  /cosmiconfig/7.0.0:
+    dependencies:
+      '@types/parse-json': 4.0.0
+      import-fresh: 3.2.1
+      parse-json: 5.0.0
+      path-type: 4.0.0
+      yaml: 1.10.0
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-pondGvTuVYDk++upghXJabWzL6Kxu6f26ljFw64Swq9v6sQPUL3EUlVDV56diOjpCayKihL6hVe8exIACU4XcA==
   /crypt/0.0.2:
     dev: false
     resolution:
@@ -2215,12 +2227,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-pNYNQWjfhzf0smLv0j8u4yl08cU=
-  /husky/4.2.5:
+  /husky/4.3.0:
     dependencies:
       chalk: 4.1.0
       ci-info: 2.0.0
       compare-versions: 3.6.0
-      cosmiconfig: 6.0.0
+      cosmiconfig: 7.0.0
       find-versions: 3.2.0
       opencollective-postinstall: 2.0.3
       pkg-dir: 4.2.0
@@ -2233,7 +2245,7 @@ packages:
     hasBin: true
     requiresBuild: true
     resolution:
-      integrity: sha512-SYZ95AjKcX7goYVZtVZF2i6XiZcHknw50iXvY7b0MiGoj5RwdgRQNEHdb+gPDPCXKlzwrybjFjkL6FOj8uRhZQ==
+      integrity: sha512-tTMeLCLqSBqnflBZnlVDhpaIMucSGaYyX6855jM4AguGeWCeSzNdb1mfyWduTZ3pe3SJVvVWGL0jO1iKZVPfTA==
   /iconv-lite/0.4.24:
     dependencies:
       safer-buffer: 2.1.2
@@ -5553,7 +5565,7 @@ specifiers:
   '@textlint-rule/textlint-rule-preset-google': 0.1.2
   conventional-changelog-conventionalcommits: 4.4.0
   cz-conventional-changelog: 3.3.0
-  husky: 4.2.5
+  husky: 4.3.0
   minimist: 1.2.5
   textlint: 11.7.6
   textlint-rule-abbr-within-parentheses: 1.0.2
