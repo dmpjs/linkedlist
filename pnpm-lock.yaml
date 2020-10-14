@@ -25,7 +25,7 @@ dependencies:
   write-good: 1.0.3
 devDependencies:
   minimist: 1.2.5
-  yargs-parser: 20.2.1
+  yargs-parser: 20.2.2
 lockfileVersion: 5.1
 packages:
   /@azu/format-text/1.0.1:
@@ -5532,12 +5532,12 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-o50j0JeToy/4K6OZcaQmW6lyXXKhq7csREXcDwk2omFPJEwUNOVtJKvmDr9EI1fAJZUyZcRF7kxGBWmRXudrCQ==
-  /yargs-parser/20.2.1:
+  /yargs-parser/20.2.2:
     dev: true
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-yYsjuSkjbLMBp16eaOt7/siKTjNVjMm3SoJnIg3sEh/JsvqVVDyjRKmaJV4cl+lNIgq6QEco2i3gDebJl7/vLA==
+      integrity: sha512-XmrpXaTl6noDsf1dKpBuUNCOHqjs0g3jRMXf/ztRxdOmb+er8kE5z5b55Lz3p5u2T8KJ59ENBnASS8/iapVJ5g==
   /yargs/15.4.1:
     dependencies:
       cliui: 6.0.0
@@ -5582,4 +5582,4 @@ specifiers:
   textlint-rule-terminology: 2.1.4
   textlint-rule-write-good: 1.6.2
   write-good: 1.0.3
-  yargs-parser: 20.2.1
+  yargs-parser: 20.2.2
