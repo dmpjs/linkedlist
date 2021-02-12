@@ -22,7 +22,7 @@ dependencies:
   textlint-rule-no-todo: 2.0.1
   textlint-rule-terminology: 2.1.5
   textlint-rule-write-good: 1.6.2
-  write-good: 1.0.6
+  write-good: 1.0.7
 devDependencies:
   minimist: 1.2.5
   yargs-parser: 20.2.4
@@ -3329,13 +3329,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-mYihjs47X5+N71CN3P+QBrEIBuclIfMMpgWEpkmLqFPvrOXdzokvDlhbLfjdBNZOqYgniaeZC6J1ZCgxFdyvXw==
-  /no-cliches/0.2.2:
+  /no-cliches/0.3.0:
     dev: false
     engines:
       node: '>=6'
       npm: '>=5'
     resolution:
-      integrity: sha512-iEOqDAOFl6uN5jZGRj39Jdo8qALzf2HPXtpFso8+BMaDylDrUMYMwhFbfYGgxdnMlsRnxYTwv68kaXEpsHIapg==
+      integrity: sha512-F5RA5GyDsJ9dYx2nFwzzy371BbFTBInQ/gO6arT+ngrI+1sDP5cSZxkWsVLgRoLMln4rs3xXBLjD2sLa7TnV1g==
   /node-fetch/2.6.0:
     dev: false
     engines:
@@ -5652,12 +5652,12 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-fDKIHO5wCzTLCOGNJl1rzzJrZlTIzfZl8msOoJQZzRhYo0X/tFTm4+2B1zTibFYK01Nnd1kLZBjj4xjcFLePNQ==
-  /write-good/1.0.6:
+  /write-good/1.0.7:
     dependencies:
       adverb-where: 0.2.1
       commander: 2.20.3
       e-prime: 0.10.4
-      no-cliches: 0.2.2
+      no-cliches: 0.3.0
       passive-voice: 0.1.0
       too-wordy: 0.3.0
       weasel-words: 0.1.1
@@ -5667,7 +5667,7 @@ packages:
       npm: '>=5'
     hasBin: true
     resolution:
-      integrity: sha512-7oWy7O3sGnc7ht7pL0ki5SDIt746vgthEdoKT5ldFYkTQ2J7xJn998qHRiiR1SEpFhNZYd0gZUwoRN3xM/GSkQ==
+      integrity: sha512-zhU9kVR9i6UBWYeYmSLa91WZYjtg8V94x8EMpByL/gTn6mW5QrD8yYTkWJC8Azx32Slq6A6NwA74R1m6Q+n9cg==
   /write/1.0.3:
     dependencies:
       mkdirp: 0.5.5
@@ -5772,5 +5772,5 @@ specifiers:
   textlint-rule-no-todo: 2.0.1
   textlint-rule-terminology: 2.1.5
   textlint-rule-write-good: 1.6.2
-  write-good: 1.0.6
+  write-good: 1.0.7
   yargs-parser: 20.2.4
