@@ -22,7 +22,7 @@ dependencies:
   textlint-rule-no-todo: 2.0.1
   textlint-rule-terminology: 2.1.5
   textlint-rule-write-good: 1.6.2
-  write-good: 1.0.7
+  write-good: 1.0.8
 devDependencies:
   minimist: 1.2.5
   yargs-parser: 20.2.5
@@ -732,13 +732,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-CcXN3Y1QO5/l924LjcXHCo8ZPjQ=
-  /adverb-where/0.2.1:
+  /adverb-where/0.2.2:
     dev: false
     engines:
       node: '>=6'
       npm: '>=5'
     resolution:
-      integrity: sha512-IAveFBziMRMNPKFdWRcdIKaJvJG1cAfU9/tf9MzqQ84Dh4QjD9eqwnt4hNSt9cbrcEJD74BMIOaRVgVDEU7MwQ==
+      integrity: sha512-hZPUFSgljaJnzQQXqc4GCEVSxmyhBkLgf/DyeW7F068PdRE9PervS4LmftJWWSPfTpaEhpJebx3eP7D9slBjSw==
   /ajv-keywords/1.5.1_ajv@4.11.8:
     dependencies:
       ajv: 4.11.8
@@ -5157,13 +5157,13 @@ packages:
       npm: '>=5'
     resolution:
       integrity: sha512-MV5F74YF9+UYsvwXGXTh+5YP3EqH/ivwWfyFE2/YHWQQxm9jDPmkIC23nkN133Ye4nO3HTXmiMcfGqJ5xRPfOA==
-  /too-wordy/0.3.0:
+  /too-wordy/0.3.1:
     dev: false
     engines:
       node: '>=6'
       npm: '>=5'
     resolution:
-      integrity: sha512-Yk2hzecuFYHw64YwVXy30CuCXXOCgCM/+QvLmXX6CyR9+pyA/Y00cY8cmiTW2mzvWqMpVf9BPJXK6Y4kOXSMzg==
+      integrity: sha512-qfKDd/kxLEmbOqdtWnp/Gw1EEvW5ONZB3HehzkHNKFIx3bUrfda6qdOzxJ74vkaIaJbZyRFkBHkbY078fjAd5A==
   /traverse/0.6.6:
     dev: false
     resolution:
@@ -5652,14 +5652,14 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-fDKIHO5wCzTLCOGNJl1rzzJrZlTIzfZl8msOoJQZzRhYo0X/tFTm4+2B1zTibFYK01Nnd1kLZBjj4xjcFLePNQ==
-  /write-good/1.0.7:
+  /write-good/1.0.8:
     dependencies:
-      adverb-where: 0.2.1
+      adverb-where: 0.2.2
       commander: 2.20.3
       e-prime: 0.10.4
       no-cliches: 0.3.0
       passive-voice: 0.1.0
-      too-wordy: 0.3.0
+      too-wordy: 0.3.1
       weasel-words: 0.1.1
     dev: false
     engines:
@@ -5667,7 +5667,7 @@ packages:
       npm: '>=5'
     hasBin: true
     resolution:
-      integrity: sha512-zhU9kVR9i6UBWYeYmSLa91WZYjtg8V94x8EMpByL/gTn6mW5QrD8yYTkWJC8Azx32Slq6A6NwA74R1m6Q+n9cg==
+      integrity: sha512-P1Ct7+DNrOcr2JAxDZ3Q5i5sx2LSveu7iLaoUL0A+YiG0GKf0l5+9j3rwMeyh6JeTL1+HfQV1rnwEvzhNIvpFw==
   /write/1.0.3:
     dependencies:
       mkdirp: 0.5.5
@@ -5772,5 +5772,5 @@ specifiers:
   textlint-rule-no-todo: 2.0.1
   textlint-rule-terminology: 2.1.5
   textlint-rule-write-good: 1.6.2
-  write-good: 1.0.7
+  write-good: 1.0.8
   yargs-parser: 20.2.5
