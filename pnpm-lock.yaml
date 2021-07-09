@@ -4,7 +4,7 @@ specifiers:
   '@commitlint/cli': 11.0.0
   '@commitlint/config-conventional': 11.0.0
   '@commitlint/core': 11.0.0
-  '@textlint-rule/textlint-rule-no-invalid-control-character': 1.2.0
+  '@textlint-rule/textlint-rule-no-invalid-control-character': 2.0.0
   '@textlint-rule/textlint-rule-no-unmatched-pair': 1.0.8
   '@textlint-rule/textlint-rule-preset-google': 0.1.2
   conventional-changelog-conventionalcommits: 4.6.0
@@ -32,7 +32,7 @@ dependencies:
   '@commitlint/cli': 11.0.0
   '@commitlint/config-conventional': 11.0.0
   '@commitlint/core': 11.0.0
-  '@textlint-rule/textlint-rule-no-invalid-control-character': 1.2.0
+  '@textlint-rule/textlint-rule-no-invalid-control-character': 2.0.0
   '@textlint-rule/textlint-rule-no-unmatched-pair': 1.0.8
   '@textlint-rule/textlint-rule-preset-google': 0.1.2
   conventional-changelog-conventionalcommits: 4.6.0
@@ -417,8 +417,8 @@ packages:
       '@textlint-rule/textlint-report-helper-for-google-preset': 0.1.2
     dev: false
 
-  /@textlint-rule/textlint-rule-no-invalid-control-character/1.2.0:
-    resolution: {integrity: sha512-FgkOQr14H8D/LQVAEOR2cGWhzItb9MXCAvaBwKkysIfP9Ngwam+8NRmbphQ/GrAm3PXV63QmK1xwAKM1DntwmQ==}
+  /@textlint-rule/textlint-rule-no-invalid-control-character/2.0.0:
+    resolution: {integrity: sha512-EmTC9mrmI5tm9AS+/jv46CzQVycdPjAvH5sk0DjjYCXYNv2oTWk+7naAyKJ3kKQlLzG4KHmX/JDHerVF2T6S2Q==}
     dependencies:
       execall: 1.0.0
     dev: false
