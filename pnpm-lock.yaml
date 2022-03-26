@@ -10,7 +10,7 @@ specifiers:
   conventional-changelog-conventionalcommits: 4.6.3
   cz-conventional-changelog: 3.3.0
   husky: 4.3.8
-  minimist: 1.2.5
+  minimist: 1.2.6
   textlint: 11.9.1
   textlint-rule-abbr-within-parentheses: 1.0.2
   textlint-rule-alex: 3.0.0
@@ -55,7 +55,7 @@ dependencies:
   write-good: 1.0.8
 
 devDependencies:
-  minimist: 1.2.5
+  minimist: 1.2.6
   yargs-parser: 20.2.9
 
 packages:
@@ -2502,7 +2502,7 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
     dependencies:
-      minimist: 1.2.5
+      minimist: 1.2.6
     dev: false
 
   /jsonfile/4.0.0:
@@ -2910,6 +2910,10 @@ packages:
 
   /minimist/1.2.5:
     resolution: {integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==}
+    dev: false
+
+  /minimist/1.2.6:
+    resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
 
   /misspellings/1.1.0:
     resolution: {integrity: sha1-U9UAJmy9Cc2p2UxM85LmBYm1syQ=}
@@ -2927,7 +2931,7 @@ packages:
     resolution: {integrity: sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==}
     hasBin: true
     dependencies:
-      minimist: 1.2.5
+      minimist: 1.2.6
     dev: false
 
   /ms/2.0.0:
@@ -3521,7 +3525,7 @@ packages:
     dependencies:
       deep-extend: 0.6.0
       ini: 1.3.5
-      minimist: 1.2.5
+      minimist: 1.2.6
       strip-json-comments: 2.0.1
     dev: false
 
