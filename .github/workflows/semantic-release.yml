@@ -23,7 +23,7 @@ jobs:
 
       - name: "Semantic Release"
         if: ${{ github.repository != 'dmpjs/deno-module-template' }}
-        uses: cycjimmy/semantic-release-action@v2
+        uses: cycjimmy/semantic-release-action@v3
         with:
           semantic_version: 17.0.7
           extra_plugins: |
