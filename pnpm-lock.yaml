@@ -4,7 +4,7 @@ specifiers:
   '@commitlint/cli': 11.0.0
   '@commitlint/config-conventional': 11.0.0
   '@commitlint/core': 11.0.0
-  '@textlint-rule/textlint-rule-no-invalid-control-character': 1.2.0
+  '@textlint-rule/textlint-rule-no-invalid-control-character': 2.0.0
   '@textlint-rule/textlint-rule-no-unmatched-pair': 1.0.9
   '@textlint-rule/textlint-rule-preset-google': 0.1.2
   conventional-changelog-conventionalcommits: 4.6.3
@@ -32,7 +32,7 @@ dependencies:
   '@commitlint/cli': 11.0.0
   '@commitlint/config-conventional': 11.0.0
   '@commitlint/core': 11.0.0
-  '@textlint-rule/textlint-rule-no-invalid-control-character': 1.2.0
+  '@textlint-rule/textlint-rule-no-invalid-control-character': 2.0.0
   '@textlint-rule/textlint-rule-no-unmatched-pair': 1.0.9
   '@textlint-rule/textlint-rule-preset-google': 0.1.2
   conventional-changelog-conventionalcommits: 4.6.3
@@ -380,8 +380,8 @@ packages:
       '@textlint-rule/textlint-report-helper-for-google-preset': 0.1.2
     dev: false
 
-  /@textlint-rule/textlint-rule-no-invalid-control-character/1.2.0:
-    resolution: {integrity: sha512-FgkOQr14H8D/LQVAEOR2cGWhzItb9MXCAvaBwKkysIfP9Ngwam+8NRmbphQ/GrAm3PXV63QmK1xwAKM1DntwmQ==}
+  /@textlint-rule/textlint-rule-no-invalid-control-character/2.0.0:
+    resolution: {integrity: sha512-EmTC9mrmI5tm9AS+/jv46CzQVycdPjAvH5sk0DjjYCXYNv2oTWk+7naAyKJ3kKQlLzG4KHmX/JDHerVF2T6S2Q==}
     dependencies:
       execall: 1.0.0
     dev: false
@@ -1537,7 +1537,7 @@ packages:
     dev: false
 
   /execall/1.0.0:
-    resolution: {integrity: sha1-c9CQTjlbPKsGWLCNCewlMH8pu3M=}
+    resolution: {integrity: sha512-/J0Q8CvOvlAdpvhfkD/WnTQ4H1eU0exze2nFGPj/RSC7jpQ0NkKe2r28T5eMkhEEs+fzepMZNy1kVRKNlC04nQ==}
     engines: {node: '>=0.10.0'}
     dependencies:
       clone-regexp: 1.0.1
@@ -2402,7 +2402,7 @@ packages:
     dev: false
 
   /is-regexp/1.0.0:
-    resolution: {integrity: sha1-/S2INUXEa6xaYz57mgnof6LLUGk=}
+    resolution: {integrity: sha512-7zjFAPO4/gwyQAAgRRmqeEeyIICSdmCqa3tsVHMdBzaXXRiqopZL4Cyghg/XulGWrtABTpbnYYzzIRffLkP4oA==}
     engines: {node: '>=0.10.0'}
     dev: false
 
