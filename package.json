@@ -52,7 +52,7 @@
     "write-good": "1.0.8"
   },
   "devDependencies": {
-    "minimist": "1.2.6",
+    "minimist": "1.2.8",
     "yargs-parser": "20.2.9"
   }
 }
