@@ -7,7 +7,7 @@ specifiers:
   '@textlint-rule/textlint-rule-no-invalid-control-character': 1.2.0
   '@textlint-rule/textlint-rule-no-unmatched-pair': 1.0.9
   '@textlint-rule/textlint-rule-preset-google': 0.1.2
-  conventional-changelog-conventionalcommits: 4.6.3
+  conventional-changelog-conventionalcommits: 5.0.0
   cz-conventional-changelog: 3.3.0
   husky: 4.3.8
   minimist: 1.2.8
@@ -35,7 +35,7 @@ dependencies:
   '@textlint-rule/textlint-rule-no-invalid-control-character': 1.2.0
   '@textlint-rule/textlint-rule-no-unmatched-pair': 1.0.9
   '@textlint-rule/textlint-rule-preset-google': 0.1.2
-  conventional-changelog-conventionalcommits: 4.6.3
+  conventional-changelog-conventionalcommits: 5.0.0
   cz-conventional-changelog: 3.3.0
   husky: 4.3.8
   textlint: 11.9.1
@@ -730,7 +730,7 @@ packages:
     dev: false
 
   /array-ify/1.0.0:
-    resolution: {integrity: sha1-nlKHYrSpBmrRY6aWKjZEGOlibs4=}
+    resolution: {integrity: sha512-c5AMf34bKdvPhQ7tBGhqkgKNUzMr4WUs+WDtC2ZUGOUncbxKMTvqxYctiseW3+L4bA8ec+GcZ6/A/FW4m8ukng==}
     dev: false
 
   /array-iterate/1.1.4:
@@ -1179,6 +1179,15 @@ packages:
       q: 1.5.1
     dev: false
 
+  /conventional-changelog-conventionalcommits/5.0.0:
+    resolution: {integrity: sha512-lCDbA+ZqVFQGUj7h9QBKoIpLhl8iihkO0nCTyRNzuXtcd7ubODpYB04IFy31JloiJgG0Uovu8ot8oxRzn7Nwtw==}
+    engines: {node: '>=10'}
+    dependencies:
+      compare-func: 2.0.0
+      lodash: 4.17.19
+      q: 1.5.1
+    dev: false
+
   /conventional-commit-types/3.0.0:
     resolution: {integrity: sha512-SmmCYnOniSsAa9GqWOeLqc179lfr5TRu5b4QFDkbsrJ5TZjPJx85wtOr3zn+1dbeNiXDKGPbZ72IKbPhLXh/Lg==}
     dev: false
@@ -1404,7 +1413,7 @@ packages:
     dev: false
 
   /dot-prop/3.0.0:
-    resolution: {integrity: sha1-G3CK8JSknJoOfbyteQq6U52sEXc=}
+    resolution: {integrity: sha512-k4ELWeEU3uCcwub7+dWydqQBRjAjkV9L33HjVRG5Xo2QybI6ja/v+4W73SRi8ubCqJz0l9XsTP1NbewfyqaSlw==}
     engines: {node: '>=0.10.0'}
     dependencies:
       is-obj: 1.0.1
@@ -2363,7 +2372,7 @@ packages:
     dev: false
 
   /is-obj/1.0.1:
-    resolution: {integrity: sha1-PkcprB9f3gJc19g6iW2rn09n2w8=}
+    resolution: {integrity: sha512-l4RyHgRqGN4Y3+9JHVrNqO+tN0rV5My76uW5/nuO4K1b6vw5G8d/cmFjP9tRfEsdhZNt0IFdZuK/c2Vr4Nb+Qg==}
     engines: {node: '>=0.10.0'}
     dev: false
 
@@ -3510,7 +3519,7 @@ packages:
     dev: false
 
   /q/1.5.1:
-    resolution: {integrity: sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=}
+    resolution: {integrity: sha512-kV/CThkXo6xyFEZUugw/+pIOywXcDbFYgSct5cT3gqlbkBE1SJdwy6UQoZvodiWF/ckQLZyDE/Bu1M6gVu5lVw==}
     engines: {node: '>=0.6.0', teleport: '>=0.2.0'}
     dev: false
 
