@@ -53,6 +53,6 @@
   },
   "devDependencies": {
     "minimist": "1.2.8",
-    "yargs-parser": "20.2.9"
+    "yargs-parser": "21.1.1"
   }
 }

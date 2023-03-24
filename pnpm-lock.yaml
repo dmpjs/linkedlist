@@ -26,7 +26,7 @@ specifiers:
   textlint-rule-terminology: 2.1.6
   textlint-rule-write-good: 1.6.2
   write-good: 1.0.8
-  yargs-parser: 20.2.9
+  yargs-parser: 21.1.1
 
 dependencies:
   '@commitlint/cli': 11.0.0
@@ -56,7 +56,7 @@ dependencies:
 
 devDependencies:
   minimist: 1.2.8
-  yargs-parser: 20.2.9
+  yargs-parser: 21.1.1
 
 packages:
 
@@ -5193,9 +5193,9 @@ packages:
       decamelize: 1.2.0
     dev: false
 
-  /yargs-parser/20.2.9:
-    resolution: {integrity: sha512-y11nGElTIV+CT3Zv9t7VKl+Q3hTQoT9a1Qzezhhl6Rp21gJ/IVTW7Z3y9EWXhuUBC2Shnf+DX0antecpAwSP8w==}
-    engines: {node: '>=10'}
+  /yargs-parser/21.1.1:
+    resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
+    engines: {node: '>=12'}
     dev: true
 
   /yargs/15.4.1:
