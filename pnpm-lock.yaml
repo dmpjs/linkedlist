@@ -24,7 +24,7 @@ specifiers:
   textlint-rule-no-empty-section: 1.1.0
   textlint-rule-no-todo: 2.0.1
   textlint-rule-terminology: 2.1.6
-  textlint-rule-write-good: 1.6.2
+  textlint-rule-write-good: 2.0.0
   write-good: 1.0.8
   yargs-parser: 21.1.1
 
@@ -51,7 +51,7 @@ dependencies:
   textlint-rule-no-empty-section: 1.1.0
   textlint-rule-no-todo: 2.0.1
   textlint-rule-terminology: 2.1.6
-  textlint-rule-write-good: 1.6.2
+  textlint-rule-write-good: 2.0.0
   write-good: 1.0.8
 
 devDependencies:
@@ -605,10 +605,6 @@ packages:
     dependencies:
       jsonparse: 1.3.1
       through: 2.3.8
-    dev: false
-
-  /adverb-where/0.0.9:
-    resolution: {integrity: sha1-CcXN3Y1QO5/l924LjcXHCo8ZPjQ=}
     dev: false
 
   /adverb-where/0.2.2:
@@ -3019,10 +3015,6 @@ packages:
       unist-types: 1.1.4
     dev: false
 
-  /no-cliches/0.1.1:
-    resolution: {integrity: sha512-mYihjs47X5+N71CN3P+QBrEIBuclIfMMpgWEpkmLqFPvrOXdzokvDlhbLfjdBNZOqYgniaeZC6J1ZCgxFdyvXw==}
-    dev: false
-
   /no-cliches/0.3.0:
     resolution: {integrity: sha512-F5RA5GyDsJ9dYx2nFwzzy371BbFTBInQ/gO6arT+ngrI+1sDP5cSZxkWsVLgRoLMln4rs3xXBLjD2sLa7TnV1g==}
     engines: {node: '>=6', npm: '>=5'}
@@ -4525,12 +4517,12 @@ packages:
       textlint-rule-helper: 2.3.1
     dev: false
 
-  /textlint-rule-write-good/1.6.2:
-    resolution: {integrity: sha1-PHmwQJExnU6L5ftELFlr9QDoST4=}
+  /textlint-rule-write-good/2.0.0:
+    resolution: {integrity: sha512-yvOJavJD+PgyUzvsoLDDzDtgCVBva/HNhEvsFnYVugrWz0qy2hr+/4B4wkzjro4wfPbwz20GQe5h13N4DeUEeA==}
     engines: {node: '>=6'}
     dependencies:
       textlint-rule-helper: 2.3.1
-      write-good: 0.11.3
+      write-good: 1.0.8
     dev: false
 
   /textlint-util-to-string/2.1.1:
@@ -4652,11 +4644,6 @@ packages:
     dependencies:
       is-buffer: 2.0.4
       vfile: 4.1.1
-    dev: false
-
-  /too-wordy/0.1.6:
-    resolution: {integrity: sha512-MV5F74YF9+UYsvwXGXTh+5YP3EqH/ivwWfyFE2/YHWQQxm9jDPmkIC23nkN133Ye4nO3HTXmiMcfGqJ5xRPfOA==}
-    engines: {node: '>=6', npm: '>=5'}
     dev: false
 
   /too-wordy/0.3.1:
@@ -5115,19 +5102,6 @@ packages:
       is-typedarray: 1.0.0
       signal-exit: 3.0.3
       typedarray-to-buffer: 3.1.5
-    dev: false
-
-  /write-good/0.11.3:
-    resolution: {integrity: sha512-fDKIHO5wCzTLCOGNJl1rzzJrZlTIzfZl8msOoJQZzRhYo0X/tFTm4+2B1zTibFYK01Nnd1kLZBjj4xjcFLePNQ==}
-    hasBin: true
-    dependencies:
-      adverb-where: 0.0.9
-      e-prime: 0.10.4
-      no-cliches: 0.1.1
-      object.assign: 4.1.0
-      passive-voice: 0.1.0
-      too-wordy: 0.1.6
-      weasel-words: 0.1.1
     dev: false
 
   /write-good/1.0.8:
